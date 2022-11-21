@@ -11,3 +11,9 @@ come about.
 ## Environment Configuration
 
 * [Install Anaconda on Ubuntu 22](docs/anaconda_ubuntu_22.md) 
+
+## (Jupyter) Notebook Templates
+
+This directory contains frequently used notebook templates to quickly setup
+common formats, layouts, or commands used within the exploratory process.
+Different templates are available depending on the expected analysis work.

@@ -28,6 +28,21 @@ hardware for our processing verses our local machine.
 
 1. Run the following command: ``jupyter lab --no-browser --port 8080`` Make note of the provided *token* value.
 2. Setup SSH port forwarding tunnel. In another terminal window on your local device run the following:
-``ssh -L8080:localhost:8080 <remote node / IP address>``
+``ssh -L8080:localhost:8080 <remote node / IP address>`` (See step below for SSH config values.)
 3. Open a local browser window to http://localhost:8080. Use the token value from the jupter lab start-up logs. 
 
+## SSH Port Forwarding
+
+To simplify the port forwarding process we can add a ssh_config entry for the jupyter lab host. Since we know the
+application is running on port 8080 per our ```--port 8080``` specification we can pick any local port > 1024 to 
+forward from.
+
+```
+Host jupyterlab.server
+     HostName <IP address of jupyter lab server>(Could also be hostname)
+     User <remote username>
+     IdentityFile ~/.ssh/<jupyyterlab.server key>(optional, but saves on password authentication.)
+     LocalForward 8080 127.0.0.1:8080
+```
+
+Now if you run ```ssh jupyterlab.server``` it will open a terminal to the server and perform the port forwarding.
