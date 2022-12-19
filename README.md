@@ -18,6 +18,23 @@ This directory contains frequently used notebook templates to quickly setup
 common formats, layouts, or commands used within the exploratory process.
 Different templates are available depending on the expected analysis work.
 
+## Utils
+
+This directory contains utilities for dataset:
+
+* Generation
+* Procurement 
+* Eenrichment
+
+Typically the source dataset(s) will be downloaded when you utilze the notebook
+or standalone script. If data enrichment is part of the process the new dataset
+will be located within the dataset/generated subdirectory. 
+
+## Analysis
+
+This directory contains notebooks and assorted programs to analyze downloaded
+or generated datasets.
+
 ## Licenses
 
 The licenses folder lists the open source licensing conditions as they apply
