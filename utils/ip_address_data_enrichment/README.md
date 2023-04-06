@@ -6,12 +6,12 @@ perform work related to IP address data.
 
 # Directories
 
-## datasets/download
+## data_sets/download
 
 This directory contains the soure or original datasets that are being analzed
 or used to complement another dataset.
 
-## datasets/generated
+## data_sets/generated
 
 This directory contains datasets generated from notebook analysis and is
 typically the aggregation or cleaned version of the final dataset. Some
