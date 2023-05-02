@@ -28,13 +28,3 @@ This directory contains the scripts used to produce the intermediary or final
 data sets presented in the notebooks. These scripts should be considered
 standalone and expect to be provided the source and supplemental data sets while
 producing the expected generated output files.
-
-
-# Analysis Data Sets
-
-##### src_ip_failed_login-A-TeamCymru.ipynb
-
-To obtain this data set run the Team Cymru enrichment script or playbook
-
-- [Script](https://github.com/stevescally/neda/blob/main/utils/ip_address_data_enrichment/scripts/src_ip_failed_login-DE-TeamCymru.py)
-- [Notebook](https://github.com/stevescally/neda/blob/main/utils/ip_address_data_enrichment/notebooks/src_ip_failed_login-DE-TeamCymru.ipynb)
